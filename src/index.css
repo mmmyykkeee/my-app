@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  }
 
 body {
   margin: 0;
@@ -16,16 +18,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.container{
-  top: 80px;
+.container {
+  margin-top: 80px;
   border-radius: 1px;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   padding: 10px;
-  background-color: #dddddd;
+  background-color: #ddd;
+  border-bottom-left-radius: 17px;
+  border-top-right-radius: 17px;
 }
 
-.body-container{
+.header{
+ box-shadow: 1px 4px 38px 1px rgba(0,0,0,0.75);
+}
+
+
+.body-container {
   display: flex;
 }
 
@@ -34,40 +43,66 @@ code {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #F55A5A;
+  background-color: #f55a5a;
   color: #fff;
   border-radius: 8px;
 }
 
-.image-text {
+.header::before {
+content: "";
+ background-image: url(https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_640.png);
+ height: 30px;
+ width: 30px;
+ margin-top: 4.3%;
+ padding-right: 15px;
+ background-size: contain;
+ background-repeat: no-repeat;
+
+}
+
+.card{
   display: flex;
 }
 
-.image{
- width: 100%;
- height: 100%;
- padding: 2%;
+.card img{
+  border-radius: 7px;
+  
 }
 
-.image img{
-  width: 200px;
-  height: 150px;
-  border-radius: 8px;
+.right-card{
+  padding-left: 15px;
 }
 
-.text {
+.link-location{
   display: flex;
-  width: 100%;
+  align-items: center;
 }
 
-.location, .link{
-  padding: 2%;
+.link-location a{
+  padding-left: 15px;
 }
 
 .location::before{
   content: "";
+  background-image: url(https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_640.png);
+  height: 30px;
+ width: 30px;
+ position: relative;
+ top: 8px;
+ padding: 8px;
+ margin-right: 8px;
+ background-size: contain;
+ background-repeat: no-repeat;
 }
 
-.heading{
-  padding: 2px;
-  }
+.date{
+  padding: 8px 0;
+}
+
+.info{
+  line-height: 25px;
+}
+
+a{
+  font-size: 10.24px;
+}
