@@ -4,20 +4,10 @@ import TravelData from "./TravelData";
 import Body from "./Body";
 import Destinations from "./Destinations";
 
-
-
 export default function App() {
-
-  const travelDestinations = TravelData.map(places => {
-    return <Destinations
-      img={places.img} 
-      location={places.location}
-      link={places.link}
-      place= {places.place}
-      date = {places.date}
-      info = {places.info}
-    />
-  })
+  const travelDestinations = TravelData.map((places) => {
+    return <Destinations {...places} />;
+  });
   return (
     <div>
       <Header />
@@ -25,5 +15,3 @@ export default function App() {
     </div>
   );
 }
-
- 
