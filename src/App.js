@@ -13,6 +13,7 @@ export default function App() {
       img={places.img} 
       location={places.location}
       link={places.link}
+      place= {places.place}
       date = {places.date}
       info = {places.info}
     />

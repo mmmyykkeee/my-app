@@ -1,6 +1,7 @@
 export default [
   {
     img: "https://source.unsplash.com/WLxQvbMyfas",
+    place: "Mount Fuji",
     location: "Japan",
     link: "View on Google Maps",
     date: "1st May 2018 - 23rd June 2018",
@@ -9,6 +10,7 @@ export default [
 
   {
     img: "https://source.unsplash.com/JmuyB_LibRo",
+    place: "Sydney Opera House",
     location: "Australia",
     link: "View on Google Maps",
     date: "1st July 2018 - 23rd Sep 2018",
@@ -17,6 +19,7 @@ export default [
 
   {
     img: "https://source.unsplash.com/3PeSjpLVtLg",
+    place: "Geirangerfjord",
     location: "Norway",
     link: "View on Google Maps",
     date: "1st Nov 2018 - 23rd Dec 2018",

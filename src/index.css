@@ -2,9 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
 
 body {
+  height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -19,20 +20,17 @@ code {
     monospace;
 }
 .container {
-  margin-top: 80px;
-  border-radius: 1px;
+position: relative;
   max-width: 600px;
+  min-width: 580px;
   margin: auto;
-  padding: 10px;
   background-color: #ddd;
-  border-bottom-left-radius: 17px;
-  border-top-right-radius: 17px;
+  bottom: -100px;
 }
 
-.header{
- box-shadow: 1px 4px 38px 1px rgba(0,0,0,0.75);
+.header {
+  box-shadow: 1px 4px 38px 1px rgba(0, 0, 0, 0.75);
 }
-
 
 .body-container {
   display: flex;
@@ -41,69 +39,88 @@ code {
 .header {
   padding: 0 !important;
   display: flex;
+  align-items: center;
   width: 100%;
-  min-height: max-content;
+  min-height: 80px;
   justify-content: center;
   background-color: #f55a5a;
   color: #fff;
-  border-radius: 8px;
 }
 
 .header::before {
-content: "";
- background-image: url(https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_640.png);
- height: 30px;
- width: 30px;
- margin-top: 1%;
- padding-right: 15px;
- background-size: contain;
- background-repeat: no-repeat;
-
+  content: "";
+  background-image: url(https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_640.png);
+  height: 30px;
+  width: 30px;
+  margin-top: 1%;
+  padding-right: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.card{
+.card {
   display: flex;
+  padding: 10px;
 }
 
-.card img{
-  border-radius: 7px;
-  
+.card img {
+  height: 168px;
+  width: 140px;
+  left: 33px;
+  top: 93px;
+  border-radius: 5px;
 }
 
-.right-card{
+.right-card {
   padding-left: 15px;
 }
 
-.link-location{
+.link-location {
   display: flex;
   align-items: center;
 }
 
-.link-location a{
+.link-location a {
   padding-left: 15px;
 }
 
-.location::before{
+.location{
+Font-size: 10.24px;
+Line-height: 120px;
+Line-height: 100%;
+Vertical-align: Top;
+Letter-spacing: 4px;
+
+}
+
+.location::before {
   content: "";
   background-image: url(https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_640.png);
   height: 30px;
- width: 30px;
- position: relative;
- top: 8px;
- padding: 8px;
- margin-right: 8px;
- background-size: contain;
- background-repeat: no-repeat;
+  width: 30px;
+  position: relative;
+  top: 8px;
+  padding: 8px;
+  margin-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.date{
+.date {
   padding: 8px 0;
+  font-size: 10.24px;
+  font-weight: bold;
 }
 
-.info{
+.info {
+  font-size: 10.24px;
   line-height: 25px;
 }
 
-a{
+a {
   font-size: 10.24px;
+}
+
+.name{
+  padding: 8px 0;
 }
