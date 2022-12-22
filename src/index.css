@@ -17,11 +17,12 @@ code {
     monospace;
 }
 .container{
+  top: 80px;
   border-radius: 1px;
   width: 600px;
   margin: auto;
   padding: 10px;
-  background-color: rgb(27, 233, 199);
+  background-color: #dddddd;
 }
 
 .body-container{
@@ -33,7 +34,7 @@ code {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #252525;
+  background-color: #F55A5A;
   color: #fff;
   border-radius: 8px;
 }

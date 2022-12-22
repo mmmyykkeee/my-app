@@ -10,7 +10,10 @@ export default function Body() {
           <div>
             <div className="text">
               <div className="location"> Japan</div>
-              <div className="link"> View in Google Maps</div>
+              <div className="link">
+                {" "}
+                <a href="">View in Google Maps</a>
+              </div>
             </div>
 
             <div className="heading">
@@ -33,7 +36,10 @@ export default function Body() {
           <div>
             <div className="text">
               <div className="location"> Australia</div>
-              <div className="link"> View in Google Maps</div>
+              <div className="link">
+                {" "}
+                <a href="">View in Google Maps</a>
+              </div>
             </div>
 
             <div className="heading">
@@ -54,7 +60,10 @@ export default function Body() {
           <div>
             <div className="text">
               <div className="location"> Norway</div>
-              <div className="link"> View in Google Maps</div>
+              <div className="link">
+                {" "}
+                <a href="">View in Google Maps</a>
+              </div>
             </div>
 
             <div className="heading">
